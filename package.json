@@ -1,0 +1,20 @@
+{
+  "name": "abstract-document-builder",
+  "version": "0.0.0",
+  "repository": "https://github.com/keis/abstract-document-builder",
+  "license": "ISC",
+  "files": [
+    "index.js",
+    "markup.js"
+  ],
+  "scripts": {
+    "test": "standard && tape test/unit/*"
+  },
+  "dependencies": {
+    "util-each": "^1.0.1"
+  },
+  "devDependencies": {
+    "standard": "^5.4.1",
+    "tape": "^4.4.0"
+  }
+}
