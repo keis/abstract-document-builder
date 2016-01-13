@@ -2,6 +2,13 @@ var test = require('tape')
 var Builder = require('../../index')
 var Writable = require('readable-stream').Writable
 
+test('error when not given stream', function (t) {
+  t.plan(1)
+  t.throws(function () {
+    return new Builder({})
+  }, /Expected writable stream/)
+})
+
 test('pushes data to stream', function (t) {
   t.plan(1)
   var a = []

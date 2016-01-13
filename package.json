@@ -11,6 +11,7 @@
     "test": "standard && tape test/unit/*"
   },
   "dependencies": {
+    "is-stream": "^1.0.1",
     "util-each": "^1.0.1"
   },
   "devDependencies": {
