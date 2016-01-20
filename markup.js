@@ -53,3 +53,9 @@ module.exports.tableFooter = function () {
     type: 'table.footer'
   }
 }
+
+module.exports.documentEnd = function () {
+  return {
+    type: 'document.end'
+  }
+}
