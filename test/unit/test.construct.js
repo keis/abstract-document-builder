@@ -32,3 +32,10 @@ test('table row - nested', function (t) {
   var h1 = b._tableRow('aaa', l)
   t.deepEqual(h1, { type: 'table.row', values: ['aaa', l] })
 })
+
+test('document end', function (t) {
+  t.plan(1)
+  var b = new Builder(new Writable({objectMode: true}))
+  var documentEnd = b._documentEnd()
+  t.deepEqual(documentEnd, { type: 'document.end' })
+})
